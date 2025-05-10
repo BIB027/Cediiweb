@@ -1,9 +1,10 @@
-e<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website</title>
+    <title>John Cedrick Tinamisan - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* CSS STYLES */
         * {
@@ -21,7 +22,8 @@ e<!DOCTYPE html>
         #header {
             width: 100%;
             height: 100vh;
-            background-image: url(images/background.png);
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
             background-size: cover;
             background-position: center;
         }
@@ -39,6 +41,9 @@ e<!DOCTYPE html>
 
         .logo {
             width: 140px;
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
         }
 
         nav ul li {
@@ -385,7 +390,8 @@ e<!DOCTYPE html>
 
         @media only screen and (max-width: 600px) {
             #header {
-                background-image: url(images/phone-background.png);
+                background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                                url('https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
             }
             .header-text {
                 margin-top: 100%;
@@ -489,19 +495,17 @@ e<!DOCTYPE html>
             height: auto;
         }
     </style>
-    <!-- Replace with your actual FontAwesome kit -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header">
         <div class="container">
             <nav>
-                <img src="images/logo.png" class="logo" alt="Website Logo">
+                <div class="logo">JC.TINAMISAN</div>
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Location</a></li>
-                    <li><a href="#Gallery">Gallery</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#semantics">Semantics</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <i class="fas fa-times" onclick="closemenu()"></i>
@@ -534,26 +538,25 @@ e<!DOCTYPE html>
                     
                     <div class="tab-contents active-tab" id="others">
                         <ul>
-                            <li><br><a href="https://example.com" class="about-link">Visited</a></li>
-                            <li><a href="https://example.com" class="about-link">Active</a></li>
-                            <li><a href="https://example.com" class="about-link">Link</a></li>
-                            <li><a href="https://example.com" class="about-link">Hover</a></li>
+                            <li><span>Hobbies</span><br>Basketball, Video Editing, Photography</li>
+                            <li><span>Skills</span><br>Web Development, Graphic Design</li>
+                            <li><span>Interests</span><br>Technology, Travel, Music</li>
                         </ul>
                     </div>
                     
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>2021 - Current</span><br>UI/UX Design Training at ET Institute</li>
-                            <li><span>2019 - 2021</span><br>Team lead at StarApp LLC.</li>
-                            <li><span>2017 - 2019</span><br>Adamson University</li>
+                            <li><span>2021 - Current</span><br>Freelance Web Designer</li>
+                            <li><span>2019 - 2021</span><br>IT Support Intern</li>
+                            <li><span>2018 - 2019</span><br>Graphic Design Volunteer</li>
                         </ul>
                     </div>
                     
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>Graduated-ELEMENTARY</span><br>Alcastle Educational School Inc.</li>
-                            <li><span>Graduate-SENIOR HIGH</span><br>Manuel S. Enverga University Foundation</li>
-                            <li><span>On going</span><br>BBA from ISM Bangalore.</li>
+                            <li><span>Elementary</span><br>Alcastle Educational School Inc.</li>
+                            <li><span>Senior High</span><br>Manuel S. Enverga University Foundation</li>
+                            <li><span>College</span><br>Bachelor of Science in Information Technology</li>
                         </ul>
                     </div>
                 </div>
@@ -561,7 +564,7 @@ e<!DOCTYPE html>
         </div>
     </div>
     
-    <!-- Services Section -->
+    <!-- Services/Location Section -->
     <div id="services">
         <div class="container">
             <h1 class="sub-title">Location</h1>
@@ -569,7 +572,10 @@ e<!DOCTYPE html>
                 <h3>How to Get Here</h3>
                 <p>We're located at 900 San Marcelino St, Ermita, Manila via Google Maps:</p>
                 <iframe
-                    src="https://www.google.com/maps/place/Finest+Legacy+Suites/@14.600715,120.9862327,17z/data=!3m1!4b1!4m6!3m5!1s0x3397c9f9b5c9fd67:0xe1c877f286509286!8m2!3d14.600715!4d120.9888076!16s%2Fg%2F1hc4dxkch?hl=en&entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoASAFQAw%3D%3D"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.258157674944!2d120.9862327!3d14.600715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9f9b5c9fd67%3A0xe1c877f286509286!2sFinest%20Legacy%20Suites!5e0!3m2!1sen!2sph!4v1715270000000!5m2!1sen!2sph"
+                    width="100%"
+                    height="450"
+                    style="border:0;"
                     allowfullscreen=""
                     loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"
@@ -580,11 +586,11 @@ e<!DOCTYPE html>
     </div>
     
     <!-- Gallery Section -->
-    <div id="Gallery">
+    <div id="gallery">
         <div class="container">
             <h1 class="sub-title">Gallery</h1>
             <div class="gallery-grid">
-                <!-- 2. New Pexels Images -->
+                <!-- Images -->
                 <div class="media-item">
                     <img src="https://images.pexels.com/photos/31592126/pexels-photo-31592126.jpeg?auto=compress&cs=tinysrgb&w=600" 
                          alt="Red squirrel in forest" loading="lazy">
@@ -602,7 +608,7 @@ e<!DOCTYPE html>
                          alt="Coastal cave at sunset" loading="lazy">
                 </div>
 
-                <!-- 3. All Four YouTube Videos -->
+                <!-- Videos -->
                 <div class="media-item">
                     <div class="video-container">
                         <iframe src="https://www.youtube.com/embed/fu9yk7gCTbc" 
@@ -632,46 +638,50 @@ e<!DOCTYPE html>
                     </div>
                 </div>
 
-                <!-- 4. Audio Player -->
+                <!-- Audio Player -->
                 <div class="media-item">
                     <audio controls>
-                        <source src="audio/sample.mp3" type="audio/mpeg">
+                        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
                         Your browser doesn't support audio
                     </audio>
+                    <p>Sample Audio Track</p>
                 </div>
             </div>
         </div>
     </div>
     
-    <!-- Portfolio Section -->
+    <!-- Semantics Section -->
     <div id="semantics">
         <div class="container">
             <h1 class="sub-title">Semantics</h1>
-           <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('dashboard')">Dashboard</p>
-                        <p class="tab-links" onclick="opentab('item 1')">Item 1</p>
-                        <p class="tab-links" onclick="opentab('item 2')">Item 2</p>
-                    </div>
-                    
-                    <div class="tab-contents active-tab" id="dashboard">
-                        <ul>
-                             <li><span>__</span><br></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="tab-contents" id="item 1">
-                        <ul>
-                            <li><span>__</span><br></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="tab-contents" id="item 2">
-                        <ul>
-                            <li><span>__</span><br></li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('dashboard')">Dashboard</p>
+                <p class="tab-links" onclick="opentab('item1')">Item 1</p>
+                <p class="tab-links" onclick="opentab('item2')">Item 2</p>
             </div>
+            
+            <div class="tab-contents active-tab" id="dashboard">
+                <ul>
+                    <li><span>Website Structure</span><br>This portfolio uses semantic HTML5 elements for better accessibility and SEO</li>
+                    <li><span>Technologies Used</span><br>HTML5, CSS3, JavaScript, Responsive Design</li>
+                </ul>
+            </div>
+            
+            <div class="tab-contents" id="item1">
+                <ul>
+                    <li><span>Responsive Design</span><br>The website adapts to all screen sizes from mobile to desktop</li>
+                    <li><span>Performance</span><br>Optimized with lazy loading for images and videos</li>
+                </ul>
+            </div>
+            
+            <div class="tab-contents" id="item2">
+                <ul>
+                    <li><span>Accessibility</span><br>Proper contrast ratios and semantic markup for screen readers</li>
+                    <li><span>Modern Features</span><br>CSS Grid, Flexbox, and smooth animations</li>
+                </ul>
+            </div>
+        </div>
+    </div>
     
     <!-- Contact Section -->
     <div id="contact">
@@ -682,17 +692,30 @@ e<!DOCTYPE html>
                     <p><i class="fas fa-paper-plane"></i> johncedricktinamisan@gmail.com</p>
                     <p><i class="fas fa-phone-square-alt"></i> 09511378540</p>
                     <div class="social-icons">
-                        <ul>
-                            <li><a href="https://www.facebook.com/johncedrick.tinamisan" target="_blank">Facebook</a></li>
-                            <li><a href="https://www.instagram.com/_urcediii/" target="_blank">Instagram</a></li>
-                            <li><a href="https://www.tiktok.com/@ur_cediii" target="_blank">Tiktok</a></li>
-                        </ul>
+                        <a href="https://www.facebook.com/johncedrick.tinamisan" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/_urcediii/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@ur_cediii" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
                     </div>
+                    <a href="#" class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
                 </div>
             </div>
         </div>
     </div>
-               
+    
+    <div class="copyright">
+        <p>Copyright © 2023 John Cedrick Tinamisan. <i class="fas fa-heart"></i></p>
+    </div>
+                
     <script>
         // Tab system functionality
         var tablinks = document.getElementsByClassName("tab-links");
